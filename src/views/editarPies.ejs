@@ -1,0 +1,25 @@
+<%- include('partials/_header') %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/update<%= data.id %>" method="post">
+                        <div class="form-group">
+                            <input type="text" name="nombrePie" value="<%= data.nombrePie %>" placeholder="<%= data.nombrePie %>" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="ingredientes" value="<%= data.ingredientes %>" placeholder="<%= data.ingredientes %>" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Actualizar pie.
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/_footer') %>
